@@ -100,7 +100,7 @@ abstract class Fruit implements SqueezeableInterface
 Clone the repository:
 ```bash
 git clone https://github.com/vjosic/massdata-oop-test.git
-cd massdata-oop-test
+cd massdata-oop-test/src
 ```
 
 Run the script:

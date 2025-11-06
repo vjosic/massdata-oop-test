@@ -77,8 +77,21 @@ If no configuration is provided, default values are used:
     'juice_capacity' => 20.0,
     'container_capacity' => 10,
     'prefilled' => 0,
-    'unit_to_liters' => 1.0
 ]
+```
+
+If needed, UNIT_TO_LITERS constant can be adjusted to match a different real-world conversion  
+(for example, `0.8` if one fruit volume unit represents 0.8 liters of fruit capacity).
+
+Changing this constant will automatically affect all calculations of fruit volume
+and juice yield across the simulation.
+
+Example:
+```php
+abstract class Fruit implements SqueezeableInterface
+{
+    protected const UNIT_TO_LITERS = 0.8; // 1 unit = 0.8 liters
+}
 ```
 
 ---

@@ -56,7 +56,6 @@ $config = [
     'juice_capacity' => 20,       // in liters – maximum juice tank capacity
     'container_capacity' => 8,    // in volume units – how many fruits fit in the container
     'prefilled' => 2,             // number of fruits initially added to the container
-    'unit_to_liters' => 1.0       // conversion ratio, e.g. 1 unit = 0.8 liters
 ];
 
 $juicer = new Juicer($config);
@@ -69,7 +68,7 @@ Each key has the following meaning:
 | `juice_capacity` | `float` | Total juice tank capacity in liters |
 | `container_capacity` | `int` | Maximum number of fruits the container can hold |
 | `prefilled` | `int` | Number of fruits initially added before the simulation starts |
-| `unit_to_liters` | `float` | Conversion ratio between fruit volume units and liters |
+
 
 If no configuration is provided, default values are used:
 ```php
